@@ -1,7 +1,0 @@
-package org.mindhub.collections;
-
-public class MapMain {
-public static void main(String[] args) {
-	
-}
-}
