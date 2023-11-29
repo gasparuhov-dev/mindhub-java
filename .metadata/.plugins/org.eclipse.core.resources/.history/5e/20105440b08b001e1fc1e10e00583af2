@@ -1,0 +1,30 @@
+package org.mindhub.collections;
+
+import java.util.HashSet;
+
+public class SetMain {
+
+	public static void main(String[] args) {
+		HashSet<String> set = new HashSet<String>();
+		set.add("First");
+		set.add("Second");
+		set.add("Third");
+		set.add("Third");
+		set.add("Forth");
+		set.add("Forth");
+		
+		for(String element : set) {
+			System.out.println(element);
+		}
+		
+		HashSet<BankAccount> bankAccounts = new HashSet<BankAccount>();
+		bankAccounts.add(new BankAccount(5));
+		bankAccounts.add(new BankAccount(10));
+		bankAccounts.add(new BankAccount(15));
+		bankAccounts.add(new BankAccount(5));
+		
+		for(var element : set) {
+			System.out.println(element);
+		}
+	}
+}
