@@ -1,4 +1,4 @@
-package vendingMachene;
+package vendingMachine;
 
 import java.io.Console;
 import java.io.File;

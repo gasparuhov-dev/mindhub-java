@@ -1,4 +1,4 @@
-package vendingMachene;
+package vendingMachine;
 
 import java.io.Console;
 import java.io.File;
@@ -27,7 +27,7 @@ public class SmartCoffeeVendingMachine extends CoffeeVendingMachine{
 	public void brewRecipe(Recipe recipe) {
 		super.brewRecipe(recipe);
 		for (String ingredient : super.containers.keySet()) {
-			if(super.containers.get(ingredient)< super.capacity*0.2) {
+			if(super.containers.get(ingredient)< super.CAPACITY*0.2) {
 				notifySupport(ingredient);
 			}
 		}
