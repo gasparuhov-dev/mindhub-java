@@ -2,6 +2,7 @@ package org.mindhub.stream_tasks;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class EvenNumber {
 
@@ -13,6 +14,11 @@ public class EvenNumber {
 		for (var word : split) {
 			System.out.println(word);
 		}
+		var t = Optional.of("");
+		t.ifPresentOrElse(s -> System.out.println(s), () -> {
+			throw new RuntimeException();
+		});
+
 	}
 
 	public static List<Integer> getEvenNumbers(List<Integer> list) {
