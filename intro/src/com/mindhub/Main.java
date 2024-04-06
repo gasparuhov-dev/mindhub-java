@@ -83,8 +83,27 @@ public class Main {
 //		System.out.println(firstName);
 //		System.out.println(fullname2);
 //		
-		System.out.println(compress("aabccccddabr")); // 2ab4c2dabr
+//		System.out.println(compress("aabccccddabr")); // 2ab4c2dabr
+//		double d = 0.0000000045d;
+//		System.out.println(d);
 
+//		int a = 3;
+//		int b = a++;
+//		int c = ++a;
+
+//		System.out.printf("a:%d b:%s, c:%d", a, b, c);
+
+//		int a = 7;
+//		a = a >> 2;
+//		a = a << 2;
+
+//		00000001
+//		00000010
+//		00000011
+//		00000100
+//		00000111
+
+//		System.out.println(a);
 	}
 
 	public static String compress(String value) {
@@ -107,7 +126,7 @@ public class Main {
 				}
 			}
 		}
-		
+
 		if (counter == 1) {
 			result += "" + current;
 		} else {
